@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastre sua loja - Vizinho Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <div class="logo">Vizinho Digital</div>
+      <a href="vizinho_digital.html" class="botao-voltar">Voltar</a>
+    </nav>
+  </header>
+
+  <!-- Formulário de cadastro -->
+  <section class="cadastro">
+    <h1>Cadastre sua loja</h1>
+    <p>Preencha os dados abaixo para começar a vender pelo Vizinho Digital.</p>
+
+    <form id="formCadastro">
+
+      <label for="nomeLoja">Nome da loja</label>
+      <input type="text" id="nomeLoja" name="nomeLoja" placeholder="Ex: Mercado do Zé" required>
+
+      <label for="categoria">Categoria</label>
+      <select id="categoria" name="categoria" required>
+        <option value="">Selecione uma categoria</option>
+        <option value="mercearia">Mercearia</option>
+        <option value="barbearia">Barbearia</option>
+        <option value="lanchonete">Lanchonete</option>
+        <option value="salao">Salão de beleza</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <label for="whatsapp">WhatsApp para pedidos</label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="(47) 99999-9999" required>
+
+      <label for="endereco">Endereço</label>
+      <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro" required>
+
+      <label for="horario">Horário de funcionamento</label>
+      <input type="text" id="horario" name="horario" placeholder="Ex: Seg a Sáb, 7h às 19h" required>
+
+      <button type="submit">Cadastrar loja</button>
+
+      <p id="mensagemSucesso" class="mensagem-sucesso"></p>
+
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 Vizinho Digital. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>

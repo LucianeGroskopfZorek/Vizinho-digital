@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel da loja - Vizinho Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <div class="logo">Vizinho Digital</div>
+      <a href="loja.html" class="botao-voltar">Ver página da loja</a>
+    </nav>
+  </header>
+
+  <!-- Painel -->
+  <section class="painel">
+    <h1>Painel da loja</h1>
+    <p>Atualize preços e destaque promoções do Mercado do Zé.</p>
+
+    <table class="tabela-painel">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço (R$)</th>
+          <th>Promoção</th>
+        </tr>
+      </thead>
+      <tbody id="corpoTabela">
+        <!-- As linhas de produtos vão ser geradas aqui pelo JavaScript -->
+      </tbody>
+    </table>
+
+    <button id="botaoSalvar">Salvar alterações</button>
+
+    <p id="mensagemSalvo" class="mensagem-sucesso"></p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 Vizinho Digital. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="painel.js"></script>
+</body>
+</html>

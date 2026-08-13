@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerar descrição - Vizinho Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <div class="logo">Vizinho Digital</div>
+      <a href="painel.html" class="botao-voltar">Voltar ao painel</a>
+    </nav>
+  </header>
+
+  <!-- Gerador de descrição -->
+  <section class="cadastro">
+    <h1>Gerar descrição com IA</h1>
+    <p>Digite o nome do produto e algumas palavras-chave. A IA monta a descrição pra você.</p>
+
+    <form id="formDescricao">
+
+      <label for="nomeProduto">Nome do produto</label>
+      <input type="text" id="nomeProduto" placeholder="Ex: Queijo Minas" required>
+
+      <label for="palavrasChave">Palavras-chave (separadas por vírgula)</label>
+      <input type="text" id="palavrasChave" placeholder="Ex: fresco, artesanal, 500g" required>
+
+      <button type="submit">Gerar descrição</button>
+
+    </form>
+
+    <div id="resultadoDescricao" class="resultado-ia"></div>
+
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 Vizinho Digital. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="gerar-descricao.js"></script>
+</body>
+</html>
